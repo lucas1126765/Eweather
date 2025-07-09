@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MapPin, AlertTriangle, Wind, Eye, RefreshCw, Satellite, Maximize2, Minimize2 } from 'lucide-react';
+import { AlertTriangle, Wind, Eye, RefreshCw, Satellite, Maximize2, Minimize2 } from 'lucide-react';
 import { typhoonService, TyphoonData } from '../services/typhoonService';
 
 export const TaiwanMap: React.FC = () => {
