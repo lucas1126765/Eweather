@@ -84,58 +84,57 @@ function App() {
                 <WeatherWidget weather={weather} />
               </div>
               
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-              <div className="space-y-6">
-                <CurrentWeather weather={weather} />
-              </div>
-              
-              <div className="lg:col-span-2 space-y-6">
-                <ForecastCard forecast={forecast} />
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div className="space-y-6">
+                  <CurrentWeather weather={weather} />
+                </div>
                 
-                {/* 颱風監測 */}
-                <TaiwanMap />
-                
-                {/* 氣象警報 */}
-                <WeatherAlerts alerts={mockAlerts} />
-                
-                {/* Additional Info Card */}
-                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-4 md:p-6 shadow-xl">
-                  <h3 className="text-xl font-bold text-white mb-4">氣象資訊</h3>
-                  <div className="grid grid-cols-2 gap-3 md:gap-4">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
-                      <div className="text-sm text-white/70 mb-1">氣壓</div>
-                      <div className="text-base md:text-lg font-semibold text-white">
-                        {weather.main.pressure} hPa
+                <div className="lg:col-span-2 space-y-6">
+                  <ForecastCard forecast={forecast} />
+                  
+                  {/* 颱風監測 */}
+                  <TaiwanMap />
+                  
+                  {/* 氣象警報 */}
+                  <WeatherAlerts alerts={mockAlerts} />
+                  
+                  {/* Additional Info Card */}
+                  <div className="bg-white/10 backdrop-blur-md rounded-3xl p-4 md:p-6 shadow-xl">
+                    <h3 className="text-xl font-bold text-white mb-4">氣象資訊</h3>
+                    <div className="grid grid-cols-2 gap-3 md:gap-4">
+                      <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
+                        <div className="text-sm text-white/70 mb-1">氣壓</div>
+                        <div className="text-base md:text-lg font-semibold text-white">
+                          {weather.main.pressure} hPa
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
-                      <div className="text-sm text-white/70 mb-1">雲量</div>
-                      <div className="text-base md:text-lg font-semibold text-white">
-                        {weather.clouds.all}%
+                      <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
+                        <div className="text-sm text-white/70 mb-1">雲量</div>
+                        <div className="text-base md:text-lg font-semibold text-white">
+                          {weather.clouds.all}%
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
-                      <div className="text-sm text-white/70 mb-1">紫外線指數</div>
-                      <div className="text-base md:text-lg font-semibold text-white">
-                        {Math.floor(Math.random() * 11) + 1}
+                      <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
+                        <div className="text-sm text-white/70 mb-1">紫外線指數</div>
+                        <div className="text-base md:text-lg font-semibold text-white">
+                          {Math.floor(Math.random() * 11) + 1}
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
-                      <div className="text-sm text-white/70 mb-1">空氣品質</div>
-                      <div className="text-base md:text-lg font-semibold text-white">
-                        良好
+                      <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3 md:p-4">
+                        <div className="text-sm text-white/70 mb-1">空氣品質</div>
+                        <div className="text-base md:text-lg font-semibold text-white">
+                          良好
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
             </>
           )}
 
           {/* Footer */}
           <footer className="mt-12 md:mt-16 text-center text-white/60">
-            {/* Creator Info */}
             <div className="bg-white/10 backdrop-blur-md rounded-3xl p-4 md:p-6 mb-6 shadow-xl">
               <div className="flex flex-col items-center gap-3">
                 <div className="flex items-center gap-3">
