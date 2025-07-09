@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { WeatherData } from '../types/weather';
 import { weatherService } from '../services/weatherService';
-import { taiwanCities } from '../data/taiwanCities';
-
 export const WidgetPage: React.FC = () => {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(true);
