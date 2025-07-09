@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { WeatherData } from '../types/weather';
 import { weatherService } from '../services/weatherService';
+
 export const WidgetPage: React.FC = () => {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -12,11 +13,7 @@ export const WidgetPage: React.FC = () => {
         const params = new URLSearchParams(window.location.search);
         const lat = parseFloat(params.get('lat') || '25.0330');
         const lon = parseFloat(params.get('lon') || '121.5654');
-        const size = params.get('size') || 'medium';
         const theme = params.get('theme') || 'auto';
-        const showDetails = params.get('details') === 'true';
-        const borderRadius = parseInt(params.get('radius') || '16');
-        const backgroundColor = params.get('bg') || 'rgba(255, 255, 255, 0.1)';
 
         const weatherData = await weatherService.getCurrentWeather(lat, lon);
         setWeather(weatherData);
