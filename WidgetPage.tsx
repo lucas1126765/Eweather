@@ -113,7 +113,7 @@ export const WidgetPage: React.FC = () => {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            Powered by EG Weather
+            Powered by Eweather
           </a>
         </div>
       </div>
