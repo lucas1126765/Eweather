@@ -1,7 +1,7 @@
 {
-  "name": "EG Weather - 台灣天氣預報",
-  "short_name": "EG Weather",
-  "description": "EG Weather - 由 CodeZone 團隊開發的台灣天氣應用，提供即時天氣資訊與颱風監測",
+  "name": "Eweather - 台灣天氣預報",
+  "short_name": "Eweather",
+  "description": "Eweather - 由 CodeZone 團隊開發的台灣天氣應用，提供即時天氣資訊與颱風監測",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1e40af",

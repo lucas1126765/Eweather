@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { WidgetPage } from './pages/WidgetPage';
+import { WidgetPage } from './WidgetPage';
 import App from './App.tsx';
 import './index.css';
 

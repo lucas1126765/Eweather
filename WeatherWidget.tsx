@@ -125,7 +125,7 @@ export const WeatherWidget: React.FC<WeatherWidgetProps> = ({ weather }) => {
           )}
 
           <div className="mt-auto pt-2 text-xs opacity-60 text-center border-t border-current/20">
-            Powered by EG Weather
+            Powered by Eweather
           </div>
         </div>
       )}
