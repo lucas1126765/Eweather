@@ -24,7 +24,7 @@ export const ShareButton: React.FC<ShareButtonProps> = ({ weather }) => {
         shareLink = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedText}`;
         break;
       case 'twitter':
-        shareLink = `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}&hashtags=EGWeather,台灣天氣`;
+        shareLink = `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}&hashtags=Eweather,台灣天氣`;
         break;
       case 'line':
         shareLink = `https://social-plugins.line.me/lineit/share?url=${encodedUrl}&text=${encodedText}`;
@@ -43,7 +43,7 @@ export const ShareButton: React.FC<ShareButtonProps> = ({ weather }) => {
         if (navigator.share) {
           try {
             await navigator.share({
-              title: 'EG Weather - 天氣資訊',
+              title: 'Eweather - 天氣資訊',
               text: shareText,
               url: shareUrl,
             });
