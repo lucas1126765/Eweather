@@ -59,7 +59,7 @@ function App() {
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-3">
                 <Cloud className="w-8 h-8 text-white" />
               </div>
-              <h1 className="text-4xl font-bold text-white">EG Weather</h1>
+              <h1 className="text-4xl font-bold text-white">Eweather</h1>
             </div>
             <p className="text-white/80 text-lg">台灣即時天氣預報與颱風監測</p>
           </header>
@@ -142,7 +142,7 @@ function App() {
                     <Cloud className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-lg md:text-xl font-bold text-white">EG Weather</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-white">Eweather</h3>
                     <p className="text-sm md:text-base text-white/80">by CodeZone 團隊</p>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ function App() {
             </div>
             
             <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="text-sm md:text-base">EG Weather - 資料來源：OpenWeatherMap</span>
+              <span className="text-sm md:text-base">Eweather - 資料來源：OpenWeatherMap</span>
               <span>•</span>
               <a
                 href="https://github.com"
@@ -190,7 +190,7 @@ function App() {
             <div className="flex items-center justify-center gap-1 text-xs md:text-sm">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-400" />
-              <span>by EG Weather</span>
+              <span>by Eweather</span>
               <span className="mx-2 text-white/40">by</span>
               <span className="font-medium text-white/80">CodeZone</span>
             </div>
